@@ -35,5 +35,12 @@ public class UserTest {
     assertEquals( 10, user.addUpHand() );
   }
 
+  @Test
+  public void canReturnValueOfHandIfMultipleCards() {
+    user.addToHand(card);
+    user.addToHand(card);
+    assertEquals( 20, user.addUpHand() );
+  }
+
 
 }
