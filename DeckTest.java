@@ -10,6 +10,7 @@ public class DeckTest {
   @Before
   public void before() {
     deck = new Deck();
+    card = new Card(FaceValue.KING);
   }
 
   @Test
@@ -21,6 +22,18 @@ public class DeckTest {
   public void hasCardsInDeck() {
     deck.addCard(card);
     assertEquals( 1, deck.getSize() );
+  }
+
+  // @Test
+  // public void hasFiftyTwoCardsInDeck() {
+  //   deck.shuffle();
+  //   assertEquals( 52, deck.getSize() );
+  // }
+
+  @Test
+  public void hasFourCardsOfSameType() {
+    deck.addFourCards(card);
+    assertEquals( 4, deck.getSize() );
   }
 
 }
