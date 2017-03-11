@@ -45,4 +45,11 @@ public class DeckTest {
     assertEquals( 1, user.giveHandSize() );
   }
 
+  @Test
+  public void hasLessCardsAfterDealing() {
+    deck.shuffle();
+    deck.deal(user, deck);
+    assertEquals( 51, deck.getSize() );
+  }
+
 }

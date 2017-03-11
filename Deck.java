@@ -28,9 +28,10 @@ public class Deck {
     int remainingCards = deck.getSize();
 
     Random rn = new Random();
-    int randomNum = rn.nextInt(remainingCards + 1); // inclusive of top value
+    int randomNum = rn.nextInt(remainingCards + 1); // inclusive of top value may need to add + 1
 
     Card dealtCard = deck.cardDeck.get(randomNum);
+    cardDeck.remove(randomNum);
 
     player.addToHand(dealtCard);
 
