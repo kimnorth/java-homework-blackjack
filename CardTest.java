@@ -5,27 +5,24 @@ import static org.junit.Assert.*;
 public class CardTest {
 
   Card card;
+  Card card2;
 
   @Before
-  public void before(){
-    card = new Card(10, "Hearts", null);
+  public void before() {
+    card = new Card(FaceValue.TEN);
+    card2 = new Card(FaceValue.KING);
   }
 
   @Test
-  public void canReturnFaceValue(){
-    assertEquals( 10, card.giveValue() );
+  public void canReturnFaceValue() {
+    assertEquals(10, card.giveValue() );
   }
-
-  // @Test
-  // public void canReturnFaceValueIfFaceCard(){
-  //   card = new Card(10, "Hearts", "Jack");
-  //   assertEquals( 10, card.giveValue() );
-  // }
 
   @Test
-  public void canReturnSuit(){
-    assertEquals( "Hearts", card.giveSuit() );
+  public void canReturnFaceValueIfKing() {
+    assertEquals(10, card2.giveValue());
   }
 
+  
 
 }
