@@ -6,11 +6,13 @@ public class DeckTest {
 
   Deck deck;
   Card card;
+  User user;
 
   @Before
   public void before() {
     deck = new Deck();
     card = new Card(FaceValue.KING);
+    user = new User("Player");
   }
 
   @Test
@@ -34,6 +36,13 @@ public class DeckTest {
   public void hasFourCardsOfSameType() {
     deck.addFourCards(card);
     assertEquals( 4, deck.getSize() );
+  }
+
+  @Test
+  public void canDealCards() {
+    deck.shuffle();
+    deck.deal(user, deck);
+    assertEquals( 1, user.giveHandSize() );
   }
 
 }

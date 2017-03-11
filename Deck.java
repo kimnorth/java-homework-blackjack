@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Deck {
 
@@ -22,7 +23,18 @@ public class Deck {
     }
   }  
 
-  // public void deal();
+  public void deal(Player player, Deck deck){
+
+    int remainingCards = deck.getSize();
+
+    Random rn = new Random();
+    int randomNum = rn.nextInt(remainingCards + 1); // inclusive of top value
+
+    Card dealtCard = deck.cardDeck.get(randomNum);
+
+    player.addToHand(dealtCard);
+
+  }
 
   public void shuffle() {
 
