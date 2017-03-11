@@ -24,11 +24,11 @@ public class DeckTest {
     assertEquals( 1, deck.getSize() );
   }
 
-  // @Test
-  // public void hasFiftyTwoCardsInDeck() {
-  //   deck.shuffle();
-  //   assertEquals( 52, deck.getSize() );
-  // }
+  @Test
+  public void hasFiftyTwoCardsInDeck() {
+    deck.shuffle();
+    assertEquals( 52, deck.getSize() );
+  }
 
   @Test
   public void hasFourCardsOfSameType() {

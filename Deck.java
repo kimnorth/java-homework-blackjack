@@ -24,23 +24,36 @@ public class Deck {
 
   // public void deal();
 
-  // public void shuffle() {
-  //   cardDeck.add(ace * 4);
-  //     // Card card = new Card(FaceValue.TWO) * 4;
-  //     // Card card = new Card(FaceValue.THREE) * 4;
-  //     // Card card = new Card(FaceValue.FOUR) * 4;
-  //     // Card card = new Card(FaceValue.FIVE) * 4;
-  //     // Card card = new Card(FaceValue.SIX) * 4;
-  //     // Card card = new Card(FaceValue.SEVEN) * 4;
-  //     // Card card = new Card(FaceValue.EIGHT) * 4;
-  //     // Card card = new Card(FaceValue.NINE) * 4;
-  //     // Card card = new Card(FaceValue.TEN) * 4;
-  //     // Card card = new Card(FaceValue.JACK) * 4;
-  //     // Card card = new Card(FaceValue.QUEEN) * 4;
-  //     // Card card = new Card(FaceValue.KING) * 4;
-  //   }
+  public void shuffle() {
+
+    addFourCards(ace);
+    addFourCards(two);
+    addFourCards(three);
+    addFourCards(four);
+    addFourCards(five);
+    addFourCards(six);
+    addFourCards(seven);
+    addFourCards(eight);
+    addFourCards(nine);
+    addFourCards(ten);
+    addFourCards(jack);
+    addFourCards(queen);
+    addFourCards(king);
+    
+    }
 
     Card ace = new Card(FaceValue.ACE);
-
+    Card two = new Card(FaceValue.TWO);
+    Card three = new Card(FaceValue.THREE);
+    Card four = new Card(FaceValue.FOUR);
+    Card five = new Card(FaceValue.FIVE);
+    Card six = new Card(FaceValue.SIX);
+    Card seven = new Card(FaceValue.SEVEN);
+    Card eight = new Card(FaceValue.EIGHT);
+    Card nine = new Card(FaceValue.NINE);
+    Card ten = new Card(FaceValue.TEN);
+    Card jack = new Card(FaceValue.JACK);
+    Card queen = new Card(FaceValue.QUEEN);
+    Card king = new Card(FaceValue.KING);
 
   }
