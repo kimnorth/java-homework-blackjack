@@ -29,10 +29,11 @@ public class UserTest {
     assertEquals( 1, user.giveHandSize() );
   }
 
-  // @Test
-  // public void canReturnValueOfHand() {
-  //   assertEquals( 10, user.addUpHand() )
-  // }
+  @Test
+  public void canReturnValueOfHand() {
+    user.addToHand(card);
+    assertEquals( 10, user.addUpHand() );
+  }
 
 
 }

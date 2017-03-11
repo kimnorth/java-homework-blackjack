@@ -9,6 +9,6 @@ public abstract class Player {
 
   public abstract int giveHandSize();
   public abstract void addToHand(Card card);
-  // public abstract int addUpHand();
+  public abstract int addUpHand();
 
 }

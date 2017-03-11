@@ -22,13 +22,15 @@ public class User extends Player {
     hand.add(card);
   }
 
-  // public int addUpHand(){
-  //   int total = 0;
-  //   for i in hand {
-  //     total += i.giveValue();
-  //   }
-  //   return total;
-  // }
+  public int addUpHand(){
+    int total = 0;
+
+    for (Card card : hand) {
+      total += card.giveValue();
+    }
+
+    return total;
+  }
 
 
 
