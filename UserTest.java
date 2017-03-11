@@ -16,5 +16,12 @@ public class UserTest {
     assertEquals( "human", user.giveName() );
   }
 
+  @Test 
+  public void hasHand(){
+    assertEquals( 0, user.giveHandSize() );
+  }
+
+  
+
 
 }
