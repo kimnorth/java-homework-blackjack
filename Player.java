@@ -1,5 +1,5 @@
 public interface Player {
 
-  // private String name;
+  public String giveName();
 
 }
