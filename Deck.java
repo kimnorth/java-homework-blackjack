@@ -12,6 +12,10 @@ public class Deck {
     return this.cardDeck.size();
   }
 
+  public void addCard(Card card) {
+    cardDeck.add(card);
+  }
+
   // public void deal();
 
   // public void shuffle();
