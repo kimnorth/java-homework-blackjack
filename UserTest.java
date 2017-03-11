@@ -5,10 +5,12 @@ import static org.junit.Assert.*;
 public class UserTest {
 
   User user;
+  Card card;
 
   @Before
   public void before(){  
     user = new User("human");
+    card = new Card(FaceValue.TEN);
   }
   
   @Test
@@ -21,7 +23,16 @@ public class UserTest {
     assertEquals( 0, user.giveHandSize() );
   }
 
-  
+  @Test
+  public void handHasCard(){
+    user.addToHand(card);
+    assertEquals( 1, user.giveHandSize() );
+  }
+
+  // @Test
+  // public void canReturnValueOfHand() {
+  //   assertEquals( 10, user.addUpHand() )
+  // }
 
 
 }

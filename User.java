@@ -18,4 +18,18 @@ public class User extends Player {
     return hand.size();
   }
 
+  public void addToHand(Card card){
+    hand.add(card);
+  }
+
+  // public int addUpHand(){
+  //   int total = 0;
+  //   for i in hand {
+  //     total += i.giveValue();
+  //   }
+  //   return total;
+  // }
+
+
+
 } 
