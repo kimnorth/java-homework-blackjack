@@ -1,4 +1,4 @@
-public class User implements Player {
+public class User extends Player {
 
   private String name;
   

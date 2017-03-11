@@ -1,5 +1,7 @@
-public interface Player {
+public abstract class Player {
 
-  public String giveName();
+  private String name;
+
+  public abstract String giveName();
 
 }
