@@ -24,14 +24,10 @@ public class User extends Player {
 
   public int addUpHand(){
     int total = 0;
-
     for (Card card : hand) {
       total += card.giveValue();
     }
-
     return total;
   }
-
-
 
 } 
