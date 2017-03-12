@@ -47,5 +47,11 @@ public class PlayerTest {
     assertEquals(0, user.getScore() );
   }
 
+  @Test
+  public void canAddToScore(){
+    user.addToScore();
+    assertEquals(1, user.getScore() );
+  }
+
 
 }

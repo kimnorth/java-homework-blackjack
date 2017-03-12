@@ -20,6 +20,10 @@ public class Player {
     return this.score;
   }
 
+  public void addToScore(){
+    this.score++;
+  }
+
   public int giveHandSize(){
     return hand.size();
   }
