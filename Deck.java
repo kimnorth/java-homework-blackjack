@@ -23,14 +23,14 @@ public class Deck {
     }
   }  
 
-  public void deal(Player player, Deck deck){
+  public void deal(Deck this, Player player){
 
-    int remainingCards = deck.getSize();
+    int remainingCards = this.getSize();
 
     Random rn = new Random();
-    int randomNum = rn.nextInt(remainingCards + 1); // inclusive of top value may need to add + 1
+    int randomNum = rn.nextInt(remainingCards); // inclusive of top value may need to add + 1
 
-    Card dealtCard = deck.cardDeck.get(randomNum);
+    Card dealtCard = this.cardDeck.get(randomNum);
     cardDeck.remove(randomNum);
 
     player.addToHand(dealtCard);

@@ -6,13 +6,13 @@ public class DeckTest {
 
   Deck deck;
   Card card;
-  User user;
+  Player user;
 
   @Before
   public void before() {
     deck = new Deck();
     card = new Card(FaceValue.KING);
-    user = new User("Player");
+    user = new Player("Player");
   }
 
   @Test
@@ -41,14 +41,14 @@ public class DeckTest {
   @Test
   public void canDealCards() {
     deck.shuffle();
-    deck.deal(user, deck);
+    deck.deal(user);
     assertEquals( 1, user.giveHandSize() );
   }
 
   @Test
   public void hasLessCardsAfterDealing() {
     deck.shuffle();
-    deck.deal(user, deck);
+    deck.deal(user);
     assertEquals( 51, deck.getSize() );
   }
 
