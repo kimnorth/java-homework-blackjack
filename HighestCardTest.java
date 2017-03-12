@@ -1,6 +1,7 @@
 import org.junit.Test;
 import org.junit.Before;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 public class HighestCardTest {
 
@@ -19,6 +20,12 @@ public class HighestCardTest {
   public void hasWelcomeMessage(){
     String expected = "The rules are: highest card wins. Are you ready to play? (y/n)";
     assertEquals( expected, highestCard.welcomeMessage() );
+  }
+
+  @Test
+  public void hasWinner(){
+    String expected = "Human wins!";
+    assertEquals( expected, highestCard.round() );
   }
 
 
