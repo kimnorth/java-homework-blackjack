@@ -19,5 +19,12 @@ public class BlackjackTest {
     assertEquals( expected , game.welcomeMessage() );
   }
 
+  @Test
+  public void testHasWinner(){
+    String expected = "Human wins!";
+    assertEquals( expected, game.round() );
+  }
+
+
 
 }
