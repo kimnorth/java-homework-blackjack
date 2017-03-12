@@ -2,14 +2,14 @@ import org.junit.Test;
 import org.junit.Before;
 import static org.junit.Assert.*;
 
-public class UserTest {
+public class PlayerTest {
 
-  User user;
+  Player user;
   Card card;
 
   @Before
   public void before(){  
-    user = new User("human");
+    user = new Player("human");
     card = new Card(FaceValue.TEN);
   }
   

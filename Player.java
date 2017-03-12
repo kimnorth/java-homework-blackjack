@@ -1,14 +1,33 @@
 import java.util.ArrayList;
 
-public abstract class Player {
+public class Player {
 
   private String name;
   private ArrayList<Card> hand;
 
-  public abstract String giveName();
+  public Player(String name) {
+    this.name = name;
+    this.hand = new ArrayList<Card>();
+  }
 
-  public abstract int giveHandSize();
-  public abstract void addToHand(Card card);
-  public abstract int addUpHand();
+  public String giveName(){
+    return this.name;
+  }
 
-}
+  public int giveHandSize(){
+    return hand.size();
+  }
+
+  public void addToHand(Card card){
+    hand.add(card);
+  }
+
+  public int addUpHand(){
+    int total = 0;
+    for (Card card : hand) {
+      total += card.giveValue();
+    }
+    return total;
+  }
+
+} 
