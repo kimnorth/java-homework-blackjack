@@ -37,6 +37,8 @@ public class Deck {
 
   }
 
+  // Shufffle method repopulates deck
+
   public void shuffle() {
 
     addFourCards(ace);

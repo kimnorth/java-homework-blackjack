@@ -1,7 +1,9 @@
-public class Game {
+public interface Game {
 
-  // public void run() {
+  public String welcomeMessage();
 
-  // }
+  // public void round();
+
+
 
 }
