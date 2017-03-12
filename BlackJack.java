@@ -1,11 +1,15 @@
-// public class BlackJack implements Rules {
+public class Blackjack implements Game {
 
-//   // private Deck newDeck;
+  // public BlackJack() {
 
-//   // public void newRound(){
+  // }
 
-//   //   newDeck.deal();
+  public String welcomeMessage(){
+    return "Blackjack! The rules are: best hand wins. Are you ready to play? (y/n)";
+  }
 
-//   // }
+  public String round(){
+    return "";
+  }
 
-// } 
+}

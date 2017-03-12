@@ -4,6 +4,6 @@ public interface Game {
 
   // public void round();
 
-
+  public String round();
 
 }
