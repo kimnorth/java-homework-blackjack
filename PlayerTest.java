@@ -42,5 +42,10 @@ public class PlayerTest {
     assertEquals( 20, user.addUpHand() );
   }
 
+  @Test
+  public void canReturnScore(){
+    assertEquals(0, user.getScore() );
+  }
+
 
 }

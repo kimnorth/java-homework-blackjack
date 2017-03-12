@@ -3,6 +3,8 @@ public class HighestCard implements Game {
   Player player1;
   Player player2;
   Deck deck;
+  int playerScore;
+  int computerScore;
 
   public HighestCard(){
     this.player1 = new Player("Human");
@@ -15,11 +17,19 @@ public class HighestCard implements Game {
     return "The rules are: highest card wins. Are you ready to play? (y/n)";
   }
 
-  public void round(){
 
-    deck.shuffle();
+  // public void round(){
+
+  //   deck.shuffle();
+  //   deck.deal(player1);
+  //   deck.deal(player2);
+
+  //   System.out.println("Player 1 has " + player1.addUpHand() );
+  //   System.out.println("Player 2 has " + player2.addUpHand() );
+
+  //   if ( player1.addUpHand() > player2.addUpHand() ) ? "Player Wins!" : "Computer Wins!"; 
 
 
-  }
+  // }
 
 }

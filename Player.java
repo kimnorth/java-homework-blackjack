@@ -4,14 +4,20 @@ public class Player {
 
   private String name;
   private ArrayList<Card> hand;
+  private int score;
 
   public Player(String name) {
     this.name = name;
     this.hand = new ArrayList<Card>();
+    this.score = 0;
   }
 
   public String giveName(){
     return this.name;
+  }
+
+  public int getScore(){
+    return this.score;
   }
 
   public int giveHandSize(){

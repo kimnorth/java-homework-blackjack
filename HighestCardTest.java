@@ -21,10 +21,5 @@ public class HighestCardTest {
     assertEquals( expected, highestCard.welcomeMessage() );
   }
 
-  // @Test
-  // public void canReturnHighestOfTwoHands(){
-
-  //   assertEquals();
-  // }
 
 }
